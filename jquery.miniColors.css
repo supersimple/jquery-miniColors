@@ -1,17 +1,15 @@
-.miniColors-trigger {
+a.miniColors-trigger {
 	height: 22px;
 	width: 22px;
-	background: url(images/trigger.png) center no-repeat;
-	vertical-align: middle;
-	margin: 0 .25em;
+	background: url(img/trigger.png) center no-repeat;
 	display: inline-block;
 	outline: none;
+	position:relative;
 }
 
 .miniColors-selector {
 	position: absolute;
-	width: 175px;
-	height: 150px;
+	width: 125px;
 	background: #FFF;
 	border: solid 1px #BBB;
 	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, .25);
@@ -29,37 +27,67 @@
 	border-color: #000;
 }
 
+.miniColors-arrow {
+	position:absolute;
+	top:9px;
+	left:-7px;
+}
+
+.miniColors-close {
+	position:absolute;
+	top:-2px;
+	right:-2px;
+	opacity:0.6;
+	 filter:alpha(opacity=60);
+	 z-index:140;
+}
+
+.miniColors-defaults {
+	float:left;
+	clear:both;
+	width:125px;
+	border-bottom:1px dotted #bbb;
+	margin:0 0 5px 0;
+}
+
+.miniColors-defaults a {
+	float:left;
+	margin:0 5px 5px 0;
+	border:1px solid #bbb;
+	width:19px;
+	height:19px;
+	background: url(img/colorPicker-defaults-shading.png) no-repeat top left;
+}
+
+.miniColors-defaults a.last{ margin-right:0; }
+
 .miniColors-colors {
-	position: absolute;
-	top: 5px;
-	left: 5px;
-	width: 150px;
-	height: 150px;
-	background: url(images/gradient.png) center no-repeat;
+	float:left;
+	width: 100px;
+	height: 100px;
+	background:#fff url(img/gradient.png) center no-repeat;
 	cursor: crosshair;
 }
 
 .miniColors-hues {
-	position: absolute;
-	top: 5px;
-	left: 160px;
+	float:right;
 	width: 20px;
-	height: 150px;
-	background: url(images/rainbow.png) center no-repeat;
+	height: 100px;
+	background: url(img/rainbow.png) center no-repeat;
 	cursor: crosshair;
 }
 
 .miniColors-colorPicker {
-	position: absolute;
+	position: relative;
 	width: 11px;
 	height: 11px;
-	background: url(images/circle.gif) center no-repeat;
+	background: url(img/circle.gif) center no-repeat;
 }
 
 .miniColors-huePicker {
-	position: absolute;
-	left: -3px;
+	position:relative;
+	right:3px;
 	width: 26px;
 	height: 3px;
-	background: url(images/line.gif) center no-repeat;
+	background: url(img/line.gif) center no-repeat;
 }
