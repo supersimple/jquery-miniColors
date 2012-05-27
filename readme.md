@@ -1,6 +1,8 @@
-# jQuery miniColors: A small color selector
+# Super Simple Color Picker
 
-_Copyright 2011 Cory LaViska for A Beautiful Site, LLC. (http://abeautifulsite.net/)_
+_Updated by: Todd Resudek http://supersimple.org_
+
+_Branched from: Copyright 2011 Cory LaViska for A Beautiful Site, LLC. (http://abeautifulsite.net/)_
 
 _Dual licensed under the MIT / GPLv2 licenses_
 
@@ -22,10 +24,15 @@ http://supersimple.org/color-picker
 
 * __disabled__ _[true,false]_ - Disables the control on init
 * __readonly__ _[true,false]_ - Makes the control read-only on init
-
+* __predefined-colors__ _[array]_ - Makes thumbnails in selector window for colors you preset
 
 ## Specify options on creation:
-
+    
+	var predefinedColors = new Array('#eeeeee','#5fd2e6','#7daf3c','#f0910a','#be1414','#8c1ed2','#325fc8','#6a360e','#d7d746','#222222','#f1919f');
+    $([selector]).miniColors(predefinedColors);
+	
+	or
+	
 	$([selector]).miniColors({
 		optionName: value,
 		optionName: value,
