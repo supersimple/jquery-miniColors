@@ -7,7 +7,7 @@ _Dual licensed under the MIT / GPLv2 licenses_
 
 ## Demo
 
-http://labs.abeautifulsite.net/jquery-miniColors/
+http://supersimple.org/color-picker
 
 
 ## Usage
